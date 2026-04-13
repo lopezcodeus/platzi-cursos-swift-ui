@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Circle()
-            .background(.green)
-            .padding()
-            .background(.yellow)
+        Rectangle()
             .frame(width: 200, height: 200)
+            .foregroundColor(.yellow)
+            .cornerRadius(8)
+            .opacity(0.5)
     }
 }
 
