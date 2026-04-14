@@ -9,10 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Image("logo")
-            .resizable()
-            .aspectRatio(contentMode: .fill)
-            .frame(width: 300, height: 300)
+        HStack(alignment: .center, spacing: 21) {
+            Text("Nunca")
+            Text("Pares")
+            Text("De").font(.largeTitle)
+            Text("Aprender")
+        }
     }
 }
 
