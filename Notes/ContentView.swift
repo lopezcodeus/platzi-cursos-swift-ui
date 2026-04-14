@@ -9,14 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-//        Image(systemName: "star.fill")
-//            .font(.largeTitle)
-//            .bold()
-//            .foregroundStyle(.yellow)
-        Image(systemName: "star.fill")
+        Image("logo")
             .resizable()
-            .frame(width: 100, height: 100)
-            .foregroundStyle(.yellow)
+            .aspectRatio(contentMode: .fill)
+            .frame(width: 300, height: 300)
     }
 }
 
