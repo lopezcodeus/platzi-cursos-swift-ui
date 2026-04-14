@@ -9,12 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack(alignment: .center, spacing: 21) {
-            Text("Nunca")
-            Text("Pares")
-            Text("De").font(.largeTitle)
-            Text("Aprender")
+        HStack {
+            Text("Hello World!!")
+                .font(.headline)
+                .padding()
+                .background(.blue.opacity(0.5))
+                .cornerRadius(8)
+                .bold()
+            Text("This is an example of a preview")
+            Image(systemName: "heart")
+                .foregroundColor(.red)
         }
+        .padding()
+        .background(.gray.opacity(0.5))
+        .cornerRadius(8)
     }
 }
 
