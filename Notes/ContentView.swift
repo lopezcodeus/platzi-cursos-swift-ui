@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
+    
+    @ViewBuilder
+    func cardSmallView() -> some View {
         HStack {
             Text("Hello World!!")
                 .font(.headline)
@@ -23,6 +25,52 @@ struct ContentView: View {
         .padding()
         .background(.gray.opacity(0.5))
         .cornerRadius(8)
+    }
+    
+    var body: some View {
+        
+
+        
+        ScrollView {
+            ScrollView(.horizontal) {
+                HStack {
+                    cardSmallView()
+                    cardSmallView()
+                    cardSmallView()
+                    cardSmallView()
+                    cardSmallView()
+                    cardSmallView()
+                    cardSmallView()
+                    cardSmallView()
+                    cardSmallView()
+                    cardSmallView()
+                    cardSmallView()
+                    cardSmallView()
+                    cardSmallView()
+                    cardSmallView()
+                    cardSmallView()
+                    cardSmallView()
+                }
+            }
+            VStack {
+                cardSmallView()
+                cardSmallView()
+                cardSmallView()
+                cardSmallView()
+                cardSmallView()
+                cardSmallView()
+                cardSmallView()
+                cardSmallView()
+                cardSmallView()
+                cardSmallView()
+                cardSmallView()
+                cardSmallView()
+                cardSmallView()
+                cardSmallView()
+                cardSmallView()
+                cardSmallView()
+            }
+        }
     }
 }
 
