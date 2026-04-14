@@ -32,43 +32,10 @@ struct ContentView: View {
 
         
         ScrollView {
-            ScrollView(.horizontal) {
-                HStack {
-                    cardSmallView()
-                    cardSmallView()
-                    cardSmallView()
-                    cardSmallView()
-                    cardSmallView()
-                    cardSmallView()
-                    cardSmallView()
-                    cardSmallView()
-                    cardSmallView()
-                    cardSmallView()
-                    cardSmallView()
-                    cardSmallView()
-                    cardSmallView()
-                    cardSmallView()
-                    cardSmallView()
+            VStack {
+                ForEach(0..<100) { _ in
                     cardSmallView()
                 }
-            }
-            VStack {
-                cardSmallView()
-                cardSmallView()
-                cardSmallView()
-                cardSmallView()
-                cardSmallView()
-                cardSmallView()
-                cardSmallView()
-                cardSmallView()
-                cardSmallView()
-                cardSmallView()
-                cardSmallView()
-                cardSmallView()
-                cardSmallView()
-                cardSmallView()
-                cardSmallView()
-                cardSmallView()
             }
         }
     }
