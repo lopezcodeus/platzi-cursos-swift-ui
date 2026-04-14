@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "mickey-mouse.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
