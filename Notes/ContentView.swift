@@ -28,14 +28,9 @@ struct ContentView: View {
     }
     
     var body: some View {
-        
-
-        
-        ScrollView {
-            VStack {
-                ForEach(0..<100) { _ in
-                    cardSmallView()
-                }
+        List {
+            ForEach (0..<10) { _ in
+                cardSmallView()
             }
         }
     }
