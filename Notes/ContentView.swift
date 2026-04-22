@@ -10,24 +10,9 @@ import SwiftUI
 
 
 struct ContentView: View {
-    
-    let cards: [BabyCard] = [
-        BabyCard(title: "Baby 1", body: "El baby 1 es chido", type: .small),
-        BabyCard(title: "Baby 2", body: "El baby 2 es chido", type: .small),
-        BabyCard(title: "Baby 3", body: "El baby 3 es chido", type: .big),
-        BabyCard(title: "Baby 4", body: "El baby 4 es chido", type: .small),
-        BabyCard(title: "Baby 5", body: "El baby 5 es chido", type: .big),
-    ]
-    
 
-    
     var body: some View {
-        List {
-            ForEach (cards) { card in
-
-            }
-        }
-        .listStyle(.plain)
+        BabyList()
     }
 }
 
