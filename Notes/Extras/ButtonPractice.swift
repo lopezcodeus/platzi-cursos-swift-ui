@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct ButtonPractice: View {
+    
+    @State var counter: Int = 0
+    
     var body: some View {
-        Button("Press me") {
-            print("El boton esta funcionando")
+        Button("Aumentar") {
+            self.counter += 1
+            print("El boton esta funcionando: \(self.counter)")
         }
     }
 }
